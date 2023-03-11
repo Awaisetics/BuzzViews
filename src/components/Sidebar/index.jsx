@@ -1,96 +1,80 @@
-import { useState } from 'react';
-import './sidebar.css'
+import { useState } from "react";
+import "./sidebar.css";
+import { Link, Outlet } from "react-router-dom";
+function Sidebar() {
+  const [open, setopen] = useState("");
 
-function Sidebar({childern}) {
+  const handleopen = () => {
+    open == "close" ? setopen("") : setopen("close");
+  };
 
-    const [open, setopen] = useState('');
+  return (
+    <>
+      <nav className={`sidebar ${open}`}>
+        <header>
+          <div className="image-text">
+            <span className="image">
+              {/* <img src="logo.png" alt="logo" /> */}
+            </span>
 
-    const handleopen = () => {
-        open == 'close' ? setopen('') : setopen('close');
-    }
+            <div className="text logo-text">
+              <span className="name">Buzz views</span>
+              <span className="profession">Social Media App</span>
+            </div>
+          </div>
+          <i onClick={handleopen} className="bx bx-chevron-right toggle"></i>
+        </header>
 
+        <div className="menu-bar">
+          <div className="menu">
+            <ul className="menu-links">
+              <li className="nav-link">
+                <Link to="/youtube">
+                  {/* <i className="bx bx-home-alt icon"></i> */}
+                  <i class="bx bxl-youtube icon"></i>
+                  <span className="text nav-text">Youtube</span>
+                </Link>
+              </li>
+              <li className="nav-link">
+                <Link to="/twitter">
+                  <i class="bx bxl-twitter icon"></i>
+                  <span className="text nav-text">Twitter</span>
+                </Link>
+              </li>
 
-    return (
+              <li className="nav-link">
+                <Link to="/instagram">
+                  <i class="bx bxl-instagram icon"></i>
+                  <span className="text nav-text">Instagram</span>
+                </Link>
+              </li>
+
+              <li className="nav-link">
+                <Link to="/tiktok">
+                  <i class="bx bxl-tiktok icon"></i>
+                  <span className="text nav-text">Tiktok</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bottom-content">
+            <li className="">
+              <a href="#">
+                <i className="bx bx-log-out icon"></i>
+                <span className="text nav-text">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
+      <main className="home " style={{ padding: "5%" }}>
         <>
-            <nav className={`sidebar ${open}`} >
-                <header>
-                    <div className="image-text">
-                        <span className="image">
-                            {/* <!--<img src="logo.png" alt="">--> */}
-                        </span>
-
-                        <div className="text logo-text">
-                            <span className="name">Codinglab</span>
-                            <span className="profession">Web developer</span>
-                        </div>
-                    </div>
-                    <i onClick={handleopen} className='bx bx-chevron-right toggle'></i>
-                </header>
-
-                <div className="menu-bar">
-                    <div className="menu">
-                        <ul className="menu-links">
-                            <li className="nav-link">
-                                <a href="#">
-                                    <i className='bx bx-home-alt icon' ></i>
-                                    <span className="text nav-text">Dashboard</span>
-                                </a>
-                            </li>
-
-                            <li className="nav-link">
-                                <a href="#">
-                                    <i className='bx bx-bar-chart-alt-2 icon' ></i>
-                                    <span className="text nav-text">Revenue</span>
-                                </a>
-                            </li>
-
-                            <li className="nav-link">
-                                <a href="#">
-                                    <i className='bx bx-bell icon'></i>
-                                    <span className="text nav-text">Notifications</span>
-                                </a>
-                            </li>
-
-                            <li className="nav-link">
-                                <a href="#">
-                                    <i className='bx bx-pie-chart-alt icon' ></i>
-                                    <span className="text nav-text">Analytics</span>
-                                </a>
-                            </li>
-
-                            <li className="nav-link">
-                                <a href="#">
-                                    <i className='bx bx-heart icon' ></i>
-                                    <span className="text nav-text">Likes</span>
-                                </a>
-                            </li>
-
-                            <li className="nav-link">
-                                <a href="#">
-                                    <i className='bx bx-wallet icon' ></i>
-                                    <span className="text nav-text">Wallets</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div className="bottom-content">
-                        <li className="">
-                            <a href="#">
-                                <i className='bx bx-log-out icon' ></i>
-                                <span className="text nav-text">Logout</span>
-                            </a>
-                        </li>
-
-                    </div>
-                </div>
-            </nav>
-            <section class="home">
-                {childern}
-            </section>
+          <Outlet />
         </>
-    );
+      </main>
+    </>
+  );
 }
 
 export default Sidebar;
