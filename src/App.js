@@ -6,11 +6,14 @@ import Sidebar from "./components/Sidebar";
 import Instagram from "./pages/Instagram";
 import Tiktok from "./pages/Tiktok";
 import Youtube from "./pages/Youtube";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Sidebar />}>
+          <Route path="home" element={<Home />} />
           <Route path="youtube" element={<Youtube />} />
           <Route path="instagram" element={<Instagram />} />
           <Route path="twitter" element={<Twitter />} />
