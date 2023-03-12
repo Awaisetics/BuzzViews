@@ -10,25 +10,36 @@ function Sidebar() {
 
   return (
     <>
-      <nav className={`sidebar ${open}`} >
+      <nav className={`sidebar ${open}`}>
         <header>
-          <div className="image-text">
-            <span className="image">
-              <i class='bx bxs-movie-play bx-lg' style={{ paddingTop: "4px", color: "#695cfe" }}></i>
-              {/* <img src="logo.png" alt="logo" /> */}
-            </span>
+          <Link to="/home">
+            <div className="image-text">
+              <span className="image">
+                <i
+                  class="bx bxs-movie-play bx-lg"
+                  style={{ paddingTop: "4px", color: "#695cfe" }}
+                ></i>
+                {/* <img src="logo.png" alt="logo" /> */}
+              </span>
 
-            <div className="text logo-text">
-              <span className="name">Buzz views</span>
-              <span className="profession">Social Media App</span>
+              <div className="text logo-text">
+                <span className="name">Buzz views</span>
+                <span className="profession">Social Media App</span>
+              </div>
             </div>
-          </div>
+          </Link>
           <i onClick={handleopen} className="bx bx-chevron-right toggle"></i>
         </header>
 
         <div className="menu-bar">
           <div className="menu">
             <ul className="menu-links p-0">
+              <li className="nav-link">
+                <Link to="/home">
+                  <i class="bx bxs-home icon"></i>
+                  <span className="text nav-text">Home</span>
+                </Link>
+              </li>
               <li className="nav-link">
                 <Link to="/youtube">
                   {/* <i className="bx bx-home-alt icon"></i> */}
@@ -45,7 +56,7 @@ function Sidebar() {
 
               <li className="nav-link">
                 <Link to="/instagram">
-                  <i class="bx bxl-instagram icon"></i>
+                  <i class="bx bxl-instagram-alt icon"></i>
                   <span className="text nav-text">Instagram</span>
                 </Link>
               </li>

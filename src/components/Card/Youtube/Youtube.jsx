@@ -1,87 +1,141 @@
-import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import ReactPlayer from "react-player";
-import { Typography, Box, Stack } from "@mui/material";
-import { CheckCircle } from "@mui/icons-material";
+import React, { useState, useEffect } from "react";
+import "./youtube.css";
+import axios from "axios";
+import { CircularProgress } from "@mui/material";
+const Youtube = ({ maxResults }) => {
+  const [videoData, setVideoData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-import { Videos } from "./elements";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
-
-const VideoDetail = () => {
-  const [videoDetail, setVideoDetail] = useState(null);
-  const [videos, setVideos] = useState(null);
-  const { id } = useParams();
+  const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
+  const videoEndpoint =
+    "https://www.googleapis.com/youtube/v3/videos?key=" +
+    API_KEY +
+    `&part=snippet&chart=mostPopular&maxResults=${maxResults}&regionCode=US`;
+  const channelEndpoint =
+    "https://www.googleapis.com/youtube/v3/channels?key=" +
+    API_KEY +
+    "&part=snippet";
 
   useEffect(() => {
-    fetchFromAPI(`videos?part=snippet,statistics&id=${id}`).then((data) =>
-      setVideoDetail(data.items[0])
+    const fetchData = async () => {
+      try {
+        const videoResponse = await axios.get(videoEndpoint);
+        const videoItems = videoResponse.data.items;
+        const videoIds = videoItems
+          .map((item) => item.snippet.channelId)
+          .join(",");
+
+        const channelResponse = await axios.get(
+          channelEndpoint + "&id=" + videoIds
+        );
+        const channelItems = channelResponse.data.items;
+
+        const videoData = videoItems.map((item) => {
+          const channelItem = channelItems.find(
+            (channel) => channel.id === item.snippet.channelId
+          );
+          return {
+            id: item.id,
+            title: item.snippet.title,
+            description: item.snippet.description,
+            thumbnail: item.snippet.thumbnails.medium.url,
+            channelTitle: item.snippet.channelTitle,
+            channelId: item.snippet.channelId,
+            channelThumbnail: channelItem.snippet.thumbnails.default.url,
+          };
+        });
+        setVideoData(videoData);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const makeVideoCard = (video) => {
+    const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
+    const channelUrl = `https://www.youtube.com/channel/${video.channelId}`;
+    return (
+      <div className="card shadow my-4 p-0" key={video.id}>
+        <a href={videoUrl} target="_blank" rel="noopener noreferrer">
+          <img
+            className="card-img-top mb-2"
+            src={video.thumbnail}
+            alt={video.title}
+          />
+        </a>
+        <div className="card-body">
+          <a href={videoUrl} target="_blank" rel="noopener noreferrer">
+            <h5
+              className="card-title text-dark"
+              style={{ lineBreak: "anywhere" }}
+            >
+              {video.title.slice(0, 50)}
+            </h5>
+          </a>
+          <a href={videoUrl} target="_blank" rel="noopener noreferrer">
+            <p
+              className="card-text text-secondary"
+              style={{
+                height: "4.5rem",
+                overflow: "hidden",
+                display: "-webkit-box",
+                webkitBoxOrient: "vertical",
+                webkitLineClamp: "3",
+              }}
+            >
+              {video.description}
+            </p>
+          </a>
+          <div className="channel-info mt-3">
+            <a href={channelUrl} target="_blank" rel="noopener noreferrer">
+              <img
+                className="channel-thumbnail text-dark rounded-circle me-2"
+                style={{ width: "40px", height: "40px", borderadius: "50%" }}
+                src={video.channelThumbnail}
+                alt={video.channelTitle}
+              />
+            </a>
+            <a href={channelUrl} target="_blank" rel="noopener noreferrer">
+              <span className="channel-title text-dark">
+                {video.channelTitle.slice(0, 25)}
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     );
-
-    fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
-      (data) => setVideos(data.items)
-    );
-  }, [id]);
-
-  if (!videoDetail?.snippet) return "Loading...";
-
-  const {
-    snippet: { title, channelId, channelTitle },
-    statistics: { viewCount, likeCount },
-  } = videoDetail;
+  };
 
   return (
-    <Box minHeight="95vh">
-      <Stack direction={{ xs: "column", md: "row" }}>
-        <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
-            <ReactPlayer
-              url={`https://www.youtube.com/watch?v=${id}`}
-              className="react-player"
-              controls
-            />
-            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
-              {title}
-            </Typography>
-            <Stack
-              direction="row"
-              justifyContent="space-between"
-              sx={{ color: "#fff" }}
-              py={1}
-              px={2}
-            >
-              <Link to={`/channel/${channelId}`}>
-                <Typography
-                  variant={{ sm: "subtitle1", md: "h6" }}
-                  color="#fff"
-                >
-                  {channelTitle}
-                  <CheckCircle
-                    sx={{ fontSize: "12px", color: "gray", ml: "5px" }}
-                  />
-                </Typography>
-              </Link>
-              <Stack direction="row" gap="20px" alignItems="center">
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(viewCount).toLocaleString()} views
-                </Typography>
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(likeCount).toLocaleString()} likes
-                </Typography>
-              </Stack>
-            </Stack>
-          </Box>
-        </Box>
-        <Box
-          px={2}
-          py={{ md: 1, xs: 5 }}
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Videos videos={videos} direction="column" />
-        </Box>
-      </Stack>
-    </Box>
+    <div
+      className="container"
+      style={{ height: "99.5%", overflow: "hidden", minHeight: "100vh" }}
+    >
+      <div className="d-flex align-items-center">
+        <i class="bx bxl-youtube bx-lg text-danger"></i>
+        <strong className="pb-1 ms-3" style={{ fontSize: "2rem" }}>
+          YouTube
+        </strong>
+      </div>
+      {loading ? (
+        <div>
+          <CircularProgress />
+        </div>
+      ) : (
+        <div className="row">
+          {videoData.map((video) => {
+            return (
+              <div className="col-12 col-sm-6 col-md-4" key={video.id}>
+                {makeVideoCard(video)}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 };
 
-export default VideoDetail;
+export default Youtube;

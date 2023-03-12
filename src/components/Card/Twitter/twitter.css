@@ -1,0 +1,65 @@
+.twitter-card {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.twitter-card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.twitter-card-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.twitter-card-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.twitter-card-username {
+  margin: 0;
+}
+
+.twitter-card-userhandle {
+  margin: 0;
+  color: #888;
+}
+
+.twitter-card-content {
+  padding: 10px;
+}
+
+.twitter-card-text {
+  margin: 0;
+}
+
+.twitter-card-image {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.twitter-card-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  /* background-color: #f7f7f7; */
+  /* border-top: 1px solid #ccc; */
+}
+
+.twitter-card-footer i {
+  cursor: pointer;
+  color: #888;
+}

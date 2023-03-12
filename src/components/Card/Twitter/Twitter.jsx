@@ -1,33 +1,45 @@
 import React from "react";
 import TweetCard from "react-tweet-card";
 import { Container, Box } from "@mui/material";
+import "./twitter.css";
 function Twitter() {
   return (
     <>
-      <Container maxWidth="sm">
-        <Box>
-          <TweetCard
-            author={{
-              name: "demi adejuyigbe",
-              username: "electrolemon",
-              isVerified: true,
-            }}
-            tweet={`4 months ago i quietly left 57 dvds of 'click' at my parents' house and they've still never noticed or mentioned it`}
-            tweetImages={[
-              { src: "https://pbs.twimg.com/media/BaMEhYBCAAAi6m-?format=jpg" },
-            ]}
-            time={new Date(2022, 10, 28, 22, 30)}
-            permalink="https://twitter.com/electrolemon/status/406173363174785024"
-            engagement={{
-              replies: 206,
-              retweets: 17600,
-              likes: 128200,
-            }}
-            emojis={false}
-            showDetails={true}
+      <div className="twitter-card">
+        <div className="twitter-card-header">
+          <img
+            className="twitter-card-avatar"
+            src="https://as1.ftcdn.net/v2/jpg/01/68/80/20/1000_F_168802075_Il6LeUG0NCK4JOELmkC7Ki81g0CiLpxU.jpg"
+            alt="User Avatar"
           />
-        </Box>
-      </Container>
+          <div className="twitter-card-user-info">
+            <h5 className="twitter-card-username">John Doe</h5>
+            <p className="twitter-card-userhandle">@johndoe</p>
+          </div>
+
+          <img
+            src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"
+            alt="Your logo"
+            className="logo ms-auto"
+          />
+        </div>
+        <div className="twitter-card-content">
+          <p className="twitter-card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+            posuere elit, vel semper eros bibendum eget.
+          </p>
+          <img
+            className="twitter-card-image"
+            src="https://c4.wallpaperflare.com/wallpaper/501/202/572/latest-new-nature-scene-3840x2160-wallpaper-preview.jpg"
+            alt="Card Image"
+          />
+        </div>
+        <div className="twitter-card-footer">
+          <i className="bx bxs-heart text-danger bx-sm"></i>
+          <i className="bx bx-transfer text-success bx-sm"></i>
+          <i className="bx bxs-comment text-primary bx-sm"></i>
+        </div>
+      </div>
     </>
   );
 }
