@@ -1,0 +1,20 @@
+.row::-webkit-scrollbar {
+    display: none;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: all 0.6s ease;
+}
+.channel-thumbnail:hover{
+    border: 1px solid blue;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+.channel-title:hover{
+text-decoration: underline;
+}
+.card-title:hover{
+text-decoration: underline;
+}
+.card-text:hover{
+text-decoration: underline;
+}

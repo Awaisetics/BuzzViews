@@ -8,6 +8,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 :root {
   /* ===== Colors ===== */
   --body-color: #E4E9F7;
@@ -25,8 +29,9 @@
 }
 
 body {
-  min-height: 100vh;
-  background-color: var(--body-color);
+  /* min-height: 100vh; */
+  /* background-color: var(--body-color); */
+  background-color: #E4E9F7;
   transition: var(--tran-05);
 }
 

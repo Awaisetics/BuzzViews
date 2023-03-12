@@ -10,10 +10,11 @@ function Sidebar() {
 
   return (
     <>
-      <nav className={`sidebar ${open}`}>
+      <nav className={`sidebar ${open}`} >
         <header>
           <div className="image-text">
             <span className="image">
+              <i class='bx bxs-movie-play bx-lg' style={{ paddingTop: "4px", color: "#695cfe" }}></i>
               {/* <img src="logo.png" alt="logo" /> */}
             </span>
 
@@ -27,7 +28,7 @@ function Sidebar() {
 
         <div className="menu-bar">
           <div className="menu">
-            <ul className="menu-links">
+            <ul className="menu-links p-0">
               <li className="nav-link">
                 <Link to="/youtube">
                   {/* <i className="bx bx-home-alt icon"></i> */}
@@ -59,19 +60,19 @@ function Sidebar() {
           </div>
 
           <div className="bottom-content">
-            <li className="">
+            {/* <li className="">
               <a href="#">
                 <i className="bx bx-log-out icon"></i>
                 <span className="text nav-text">Logout</span>
               </a>
-            </li>
+            </li> */}
           </div>
         </div>
       </nav>
-      <main className="home " style={{ padding: "5%" }}>
-        <>
+      <main className="home ">
+        <section className="main-content">
           <Outlet />
-        </>
+        </section>
       </main>
     </>
   );
