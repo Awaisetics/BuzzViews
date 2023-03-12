@@ -5,7 +5,7 @@ import axios from "axios";
 const Youtube = () => {
   const [videoData, setVideoData] = useState([]);
 
-  const API_KEY = 'AIzaSyB981ZnwQIaMHQPkoLCiy7IjnMQsAx8my0';
+  const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
   const videoEndpoint =
     "https://www.googleapis.com/youtube/v3/videos?key=" +
     API_KEY +
