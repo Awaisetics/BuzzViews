@@ -42,9 +42,27 @@ function Sidebar() {
               </li>
               <li className="nav-link">
                 <Link to="/youtube">
-                  {/* <i className="bx bx-home-alt icon"></i> */}
                   <i class="bx bxl-youtube icon"></i>
-                  <span className="text nav-text">Youtube</span>
+                  <span className="text nav-text">Youtube Shorts</span>
+                </Link>
+              </li>
+
+              <li className="nav-link">
+                <Link to="/tiktok">
+                  <i class="bx bxl-tiktok icon"></i>
+                  <span className="text nav-text">Tiktok</span>
+                </Link>
+              </li>
+              <li className="nav-link">
+                <Link to="/instagram">
+                  <i class="bx bxl-instagram-alt icon"></i>
+                  <span className="text nav-text">Instagram Reels</span>
+                </Link>
+              </li>
+              <li className="nav-link">
+                <Link to="/youtube">
+                  <i class="bx bxl-youtube icon"></i>
+                  <span className="text nav-text">Youtube Videos</span>
                 </Link>
               </li>
               <li className="nav-link">
@@ -55,16 +73,9 @@ function Sidebar() {
               </li>
 
               <li className="nav-link">
-                <Link to="/instagram">
-                  <i class="bx bxl-instagram-alt icon"></i>
-                  <span className="text nav-text">Instagram</span>
-                </Link>
-              </li>
-
-              <li className="nav-link">
                 <Link to="/tiktok">
-                  <i class="bx bxl-tiktok icon"></i>
-                  <span className="text nav-text">Tiktok</span>
+                  <i class="bx bxl-facebook icon"></i>
+                  <span className="text nav-text">Facebook Reels</span>
                 </Link>
               </li>
             </ul>
