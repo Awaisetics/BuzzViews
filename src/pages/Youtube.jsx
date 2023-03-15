@@ -1,11 +1,13 @@
 import React from "react";
 
 import YoutubeCard from "../components/Card/Youtube/Youtube";
+import YoutubeCarousel from "../components/Carousel/YoutubeCarousel";
 
 const Youtube = () => {
   return (
     <>
-      <YoutubeCard maxResults="21" />
+      <YoutubeCarousel />
+      {/* <YoutubeCard maxResults="21" /> */}
     </>
   );
 };
