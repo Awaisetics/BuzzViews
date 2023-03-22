@@ -6,6 +6,7 @@ function Twitter() {
   return (
     <>
       <div
+        id="twitter"
         className="container mt-5"
         style={{ height: "99.5%", overflow: "hidden" }}
       >
@@ -15,23 +16,29 @@ function Twitter() {
             Twitter
           </strong>
         </div>
-        <div className="row my-2">
-          <div className="col-12 col-sm-6 col-md-4">
+        <div className="row mt-3">
+          <div className="col-12 col-sm-6 col-md-3">
             <TwitterCard />
           </div>
-          <div className="col-12 col-sm-6 col-md-4">
+          <div className="col-12 col-sm-6 col-md-3">
             <TwitterCard />
           </div>
-          <div className="col-12 col-sm-6 col-md-4">
+          <div className="col-12 col-sm-6 col-md-3">
             <TwitterCard />
           </div>
-          <div className="col-12 col-sm-6 col-md-4">
+          <div className="col-12 col-sm-6 col-md-3">
             <TwitterCard />
           </div>
-          <div className="col-12 col-sm-6 col-md-4">
+          <div className="col-12 col-sm-6 col-md-3">
             <TwitterCard />
           </div>
-          <div className="col-12 col-sm-6 col-md-4">
+          <div className="col-12 col-sm-6 col-md-3">
+            <TwitterCard />
+          </div>
+          <div className="col-12 col-sm-6 col-md-3">
+            <TwitterCard />
+          </div>
+          <div className="col-12 col-sm-6 col-md-3">
             <TwitterCard />
           </div>
         </div>

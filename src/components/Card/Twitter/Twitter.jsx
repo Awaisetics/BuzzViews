@@ -5,7 +5,7 @@ import "./twitter.css";
 function Twitter() {
   return (
     <>
-      <div className="twitter-card">
+      <div className="twitter-card w-100 my-3">
         <div className="twitter-card-header">
           <img
             className="twitter-card-avatar"

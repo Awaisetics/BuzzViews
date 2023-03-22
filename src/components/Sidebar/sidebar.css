@@ -194,8 +194,7 @@ body.dark .sidebar li a:hover .text {
   position: absolute;
   top: 0;
   left: 250px;
-  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
-  /* max-height: 100vh; */
+  padding: 0rem 0 0.5rem 1.3rem;
   width: calc(100% - 250px);
   background-color: var(--body-color);
   transition: var(--tran-05);
@@ -209,11 +208,10 @@ body.dark .sidebar li a:hover .text {
 }
 
 .main-content {
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   border-radius: 12px;
   background-color: var(--sidebar-color);
   transition: var(--tran-05);
-  /* height: 96vh; */
 }
 
 .sidebar.close ~ .home {

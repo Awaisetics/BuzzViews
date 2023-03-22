@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./sidebar.css";
+import Home from "../../pages/Home";
 import { Link, Outlet } from "react-router-dom";
 function Sidebar() {
   const [open, setopen] = useState("");
@@ -12,7 +13,7 @@ function Sidebar() {
     <>
       <nav className={`sidebar ${open}`}>
         <header>
-          <Link to="/home">
+          <a href="#home">
             <div className="image-text">
               <span className="image">
                 <i
@@ -27,7 +28,7 @@ function Sidebar() {
                 <span className="profession">Social Media App</span>
               </div>
             </div>
-          </Link>
+          </a>
           <i onClick={handleopen} className="bx bx-chevron-right toggle"></i>
         </header>
 
@@ -35,65 +36,56 @@ function Sidebar() {
           <div className="menu">
             <ul className="menu-links p-0">
               <li className="nav-link">
-                <Link to="/home">
+                <a href="#home">
                   <i class="bx bxs-home icon"></i>
                   <span className="text nav-text">Home</span>
-                </Link>
+                </a>
               </li>
               <li className="nav-link">
-                <Link to="/youtube">
+                <a href="#youtube">
                   <i class="bx bxl-youtube icon"></i>
-                  <span className="text nav-text">Youtube Shorts</span>
-                </Link>
+                  <span className="text nav-text">Youtube</span>
+                </a>
               </li>
 
               <li className="nav-link">
-                <Link to="/tiktok">
+                <a href="#tiktok">
                   <i class="bx bxl-tiktok icon"></i>
                   <span className="text nav-text">Tiktok</span>
-                </Link>
+                </a>
               </li>
               <li className="nav-link">
-                <Link to="/instagram">
+                <a href="#instagram">
                   <i class="bx bxl-instagram-alt icon"></i>
-                  <span className="text nav-text">Instagram Reels</span>
-                </Link>
+                  <span className="text nav-text">Instagram</span>
+                </a>
               </li>
               <li className="nav-link">
-                <Link to="/youtube">
+                <a href="#youtubeShorts">
                   <i class="bx bxl-youtube icon"></i>
-                  <span className="text nav-text">Youtube Videos</span>
-                </Link>
+                  <span className="text nav-text">Youtube Shorts</span>
+                </a>
               </li>
               <li className="nav-link">
-                <Link to="/twitter">
+                <a href="#twitter">
                   <i class="bx bxl-twitter icon"></i>
                   <span className="text nav-text">Twitter</span>
-                </Link>
+                </a>
               </li>
 
               <li className="nav-link">
-                <Link to="/tiktok">
+                <a href="#fbReels">
                   <i class="bx bxl-facebook icon"></i>
                   <span className="text nav-text">Facebook Reels</span>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
-
-          <div className="bottom-content">
-            {/* <li className="">
-              <a href="#">
-                <i className="bx bx-log-out icon"></i>
-                <span className="text nav-text">Logout</span>
-              </a>
-            </li> */}
-          </div>
         </div>
       </nav>
-      <main className="home ">
+      <main id="home" className="home">
         <section className="main-content">
-          <Outlet />
+          <Home />
         </section>
       </main>
     </>

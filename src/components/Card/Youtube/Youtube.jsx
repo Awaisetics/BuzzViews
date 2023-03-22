@@ -52,42 +52,38 @@ const Youtube = ({ maxResults }) => {
     };
     fetchData();
   }, []);
-
   const makeVideoCard = (video) => {
-    const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
+    const videoUrl = `https://www.youtube.com/embed/${video.id}`;
     const channelUrl = `https://www.youtube.com/channel/${video.channelId}`;
     return (
-      <div className="card shadow my-4 p-0" key={video.id}>
-        <a href={videoUrl} target="_blank" rel="noopener noreferrer">
-          <img
-            className="card-img-top mb-2"
-            src={video.thumbnail}
-            alt={video.title}
+      <div className="card shadow my-4 p-0 w-100" key={video.id}>
+        <div className="embed-responsive w-100 embed-responsive-16by9" style={{height : "300px"}}>
+          <iframe
+            className="embed-responsive-item w-100 h-100"
+            src={videoUrl}
+            title={video.title}
+            allowFullScreen
           />
-        </a>
+        </div>
         <div className="card-body">
-          <a href={videoUrl} target="_blank" rel="noopener noreferrer">
-            <h5
-              className="card-title text-dark"
-              style={{ lineBreak: "anywhere" }}
-            >
-              {video.title.slice(0, 50)}
-            </h5>
-          </a>
-          <a href={videoUrl} target="_blank" rel="noopener noreferrer">
-            <p
-              className="card-text text-secondary"
-              style={{
-                height: "4.5rem",
-                overflow: "hidden",
-                display: "-webkit-box",
-                webkitBoxOrient: "vertical",
-                webkitLineClamp: "3",
-              }}
-            >
-              {video.description}
-            </p>
-          </a>
+          <h5
+            className="card-title text-dark"
+            style={{ lineBreak: "anywhere" }}
+          >
+            {video.title.slice(0, 50)}
+          </h5>
+          <p
+            className="card-text text-secondary"
+            style={{
+              height: "4.5rem",
+              overflow: "hidden",
+              display: "-webkit-box",
+              webkitBoxOrient: "vertical",
+              webkitLineClamp: "3",
+            }}
+          >
+            {video.description}
+          </p>
           <div className="channel-info mt-3">
             <a href={channelUrl} target="_blank" rel="noopener noreferrer">
               <img
@@ -107,9 +103,10 @@ const Youtube = ({ maxResults }) => {
       </div>
     );
   };
-
+  
   return (
     <div
+    id="youtube"
       className="container"
       style={{ height: "99.5%", overflow: "hidden", minHeight: "100vh" }}
     >
@@ -127,7 +124,7 @@ const Youtube = ({ maxResults }) => {
         <div className="row">
           {videoData.map((video) => {
             return (
-              <div className="col-12 col-sm-6 col-md-4" key={video.id}>
+              <div className="col-12 col-sm-6 col-md-3" key={video.id}>
                 {makeVideoCard(video)}
               </div>
             );

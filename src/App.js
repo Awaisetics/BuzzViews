@@ -11,7 +11,9 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <Routes>
+      <Sidebar />
+      {/* <Home /> */}
+      {/* <Routes>
         <Route path="/" element={<Sidebar />}>
           <Route path="home" element={<Home />} />
           <Route path="youtube" element={<Youtube />} />
@@ -19,7 +21,7 @@ function App() {
           <Route path="twitter" element={<Twitter />} />
           <Route path="tiktok" element={<Tiktok />} />
         </Route>
-      </Routes>
+      </Routes> */}
     </>
   );
 }

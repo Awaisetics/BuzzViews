@@ -15,7 +15,7 @@ function Index() {
 
   return (
     <>
-      <div class="card">
+      <div class="instaCard w-100 my-3">
         <div class="top">
           <div class="userDetails">
             <div class="profile-img">

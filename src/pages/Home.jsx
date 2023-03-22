@@ -1,17 +1,17 @@
 import React from "react";
 import Instagram from "./Instagram";
-import YoutubeCard from "../components/Card/Youtube/Youtube";
+import Youtube from "../components/Card/Youtube/Youtube";
 import Twitter from "./Twitter";
+import Tiktok from './Tiktok'
+import FacebookReels from './FbReels'
 function Home() {
   return (
     <>
-      <YoutubeCard maxResults="6" />
-
+      <Tiktok />
+      <Youtube maxResults="8" />
       <Twitter />
-      <div className="my-5">
-        <Instagram />
-      </div>
-      {/* <Tiktok /> */}
+      <Instagram />
+      <FacebookReels />
     </>
   );
 }

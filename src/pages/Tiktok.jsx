@@ -1,12 +1,8 @@
 import React from "react";
-import TiktokCard from "../components/Card/TikTok/Tiktok";
+import TiktokCard from "../components/Card/TikTok/index";
 function Tiktok() {
   return (
-    <div>
-      <h1>Tiktok</h1>
-      
-      <TiktokCard />
-    </div>
+    <TiktokCard/>
   );
 }
 

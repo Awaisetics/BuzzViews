@@ -1,0 +1,41 @@
+.facebook-reels-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -8px;
+}
+
+.facebook-reel {
+    width: calc(25% - 16px);
+    margin: 0 8px 16px;
+}
+
+.facebook-reel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.facebook-reel-info {
+    padding: 8px;
+}
+
+.facebook-reel-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.facebook-reel-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facebook-reel-likes {
+    font-size: 14px;
+    color: #666;
+}
+
+.facebook-reel-views {
+    font-size: 14px;
+    color: #666;
+}
