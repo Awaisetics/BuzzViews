@@ -61,7 +61,7 @@ function Sidebar() {
                 </a>
               </li>
               <li className="nav-link">
-                <a href="#youtubeShorts">
+                <a href="#YTshorts">
                   <i class="bx bxl-youtube icon"></i>
                   <span className="text nav-text">Youtube Shorts</span>
                 </a>

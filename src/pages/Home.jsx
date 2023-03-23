@@ -2,16 +2,18 @@ import React from "react";
 import Instagram from "./Instagram";
 import Youtube from "../components/Card/Youtube/Youtube";
 import Twitter from "./Twitter";
+import YTshort from "./YTshorts/index";
 import Tiktok from './Tiktok'
-import FacebookReels from './FbReels'
+import FacebookReels from '../components/Card/FacebookReels/FacebookReels'
 function Home() {
   return (
     <>
-      <Tiktok />
       <Youtube maxResults="8" />
       <Twitter />
+      <Tiktok />
       <Instagram />
-      <FacebookReels />
+      <FacebookReels maxResults="8" />
+      <YTshort maxResults="8" />
     </>
   );
 }
