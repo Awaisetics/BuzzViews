@@ -23,3 +23,7 @@ text-decoration: underline;
 .card-text:hover{
 text-decoration: underline;
 }
+
+.carousel.carousel-slider .control-arrow {
+    background-color: #695cfe !important;
+}

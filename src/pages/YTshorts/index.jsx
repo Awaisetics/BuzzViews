@@ -59,7 +59,7 @@ const FacebookReels = ({ maxResults }) => {
     const channelUrl = `https://www.youtube.com/channel/${video.channelId}`;
     return (
       <div className="card position-relative shadow my-4 p-0 w-100" key={video.id}>
-        <video className="w-100 h-100" src={Video} autoplay="true" />
+        <video className="w-100 h-100" src={Video} autoplay="false" />
         <div className="card-body w-100 position-absolute bottom-0">
           <p
             className="card-title text-light"
