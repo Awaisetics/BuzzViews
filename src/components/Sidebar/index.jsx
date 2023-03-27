@@ -42,9 +42,9 @@ function Sidebar() {
                 </a>
               </li>
               <li className="nav-link">
-                <a href="#youtube">
+                <a href="#YTshorts">
                   <i class="bx bxl-youtube icon"></i>
-                  <span className="text nav-text">Youtube</span>
+                  <span className="text nav-text">Youtube Shorts</span>
                 </a>
               </li>
 
@@ -57,13 +57,13 @@ function Sidebar() {
               <li className="nav-link">
                 <a href="#instagram">
                   <i class="bx bxl-instagram-alt icon"></i>
-                  <span className="text nav-text">Instagram</span>
+                  <span className="text nav-text">Instagram Reels</span>
                 </a>
               </li>
               <li className="nav-link">
-                <a href="#YTshorts">
+                <a href="#youtube">
                   <i class="bx bxl-youtube icon"></i>
-                  <span className="text nav-text">Youtube Shorts</span>
+                  <span className="text nav-text">Youtube Videos</span>
                 </a>
               </li>
               <li className="nav-link">
