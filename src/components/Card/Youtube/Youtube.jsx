@@ -82,7 +82,7 @@ const Youtube = ({ maxResults }) => {
           <p
             className="card-text text-secondary"
             style={{
-              height: "4.5rem",
+              
               overflow: "hidden",
               display: "-webkit-box",
               webkitBoxOrient: "vertical",
