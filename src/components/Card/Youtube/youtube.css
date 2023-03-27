@@ -1,29 +1,33 @@
 .row::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.card:hover{
-    transform: scale(1.02);
-    transition: all 0.6s ease;
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.6s ease;
 }
 
-.channel-thumbnail:hover{
-    border: 1px solid blue;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+.channel-thumbnail:hover {
+  border: 1px solid blue;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.channel-title:hover{
-text-decoration: underline;
+.channel-title:hover {
+  text-decoration: underline;
 }
 
-.card-title:hover{
-text-decoration: underline;
+.card-title:hover {
+  text-decoration: underline;
 }
 
-.card-text:hover{
-text-decoration: underline;
+.card-text:hover {
+  text-decoration: underline;
 }
 
 .carousel.carousel-slider .control-arrow {
-    background-color: #695cfe !important;
+  /* position: absolute !important;
+  top: 50% !important; */
+  background-color: #695cfe !important;
+  height: fit-content;
+  border-radius: 50%;
 }
