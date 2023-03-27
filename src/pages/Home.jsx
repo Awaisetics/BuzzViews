@@ -10,12 +10,14 @@ import FacebookReels from '../components/Card/FacebookReels/FacebookReels'
 function Home() {
   return (
     <>
-      <Youtube maxResults="8" />
-      <Twitter />
+
+      <YTshort maxResults="8" />
       <Tiktok />
       <Instagram />
+      <Youtube maxResults="20" />
+      <Twitter />
       <FacebookReels maxResults="8" />
-      <YTshort maxResults="8" />
+
     </>
   );
 }

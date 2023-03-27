@@ -59,7 +59,7 @@ const FacebookReels = ({ maxResults }) => {
     const channelUrl = `https://www.youtube.com/channel/${video.channelId}`;
     return (
       <div className="card position-relative shadow my-4 p-0 w-100" key={video.id}>
-        <video className="w-100 h-100" src={Video} autoplay="false" />
+        <video className="w-100 h-100" src={Video} />
         <div className="card-body w-100 position-absolute bottom-0">
           <p
             className="card-title text-light"
@@ -69,24 +69,24 @@ const FacebookReels = ({ maxResults }) => {
           </p>
           <div className="channel-info d-flex justify-content-between">
             <div>
-            <a href={channelUrl} target="_blank" rel="noopener noreferrer">
-              <img
-                className="channel-thumbnail text-dark rounded-circle me-2"
-                style={{ width: "40px", height: "40px", borderadius: "50%" }}
-                src={video.channelThumbnail}
-                alt={video.channelTitle}
-              />
-            </a>
-            <a href={channelUrl} target="_blank" rel="noopener noreferrer">
-              <span className="channel-title text-light">
-                {video.channelTitle.slice(0, 9)}
-              </span>
-            </a>
+              <a href={channelUrl} target="_blank" rel="noopener noreferrer">
+                <img
+                  className="channel-thumbnail text-dark rounded-circle me-2"
+                  style={{ width: "40px", height: "40px", borderadius: "50%" }}
+                  src={video.channelThumbnail}
+                  alt={video.channelTitle}
+                />
+              </a>
+              <a href={channelUrl} target="_blank" rel="noopener noreferrer">
+                <span className="channel-title text-light">
+                  {video.channelTitle.slice(0, 9)}
+                </span>
+              </a>
             </div>
-            <a href="" className="btn btn-light btn-sm rounded-5" style={{lineHeight:"2"}}>Subscribe</a>
+            <a href="" className="btn btn-light btn-sm rounded-5" style={{ lineHeight: "2" }}>Subscribe</a>
           </div>
         </div>
-        
+
       </div>
     );
   };
