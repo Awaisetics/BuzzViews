@@ -1,5 +1,5 @@
 import React from "react";
-import TikTokVideo from './video'
+import TikTokVideo from "./video";
 
 const TikTokCard = () => {
   return (
@@ -10,332 +10,113 @@ const TikTokCard = () => {
           Tiktok
         </strong>
       </div>
-    <div className="row">
-      <div className="col-md-3 ">
-        <blockquote
-          className="tiktok-embed"
-          cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-          data-video-id="7209959696734637338"
-
-        >
-          <section>
-            <a
-              target="_blank"
-              title="@picapro2"
-              href="https://www.tiktok.com/@picapro2?refer=embed"
-            >
-              @picapro2
-            </a>{" "}
-            dangerous railway train 🚅{" "}
-            <a
-              target="_blank"
-              title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-              href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-            >
-              ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-            </a>
-          </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
+      <div className="row">
+        <div className="col-md-3 ">
+          <blockquote
+            className="tiktok-embed"
+            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+            data-video-id="7209959696734637338"
+          >
+            <section>
+              <a
+                target="_blank"
+                title="@picapro2"
+                href="https://www.tiktok.com/@picapro2?refer=embed"
+              >
+                @picapro2
+              </a>
+              <a
+                target="_blank"
+                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+              >
+                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+              </a>
+            </section>
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <div className="col-md-3 ">
+          <blockquote
+            className="tiktok-embed"
+            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+            data-video-id="7209959696734637338"
+          >
+            <section>
+              <a
+                target="_blank"
+                title="@picapro2"
+                href="https://www.tiktok.com/@picapro2?refer=embed"
+              >
+                @picapro2
+              </a>
+              <a
+                target="_blank"
+                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+              >
+                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+              </a>
+            </section>
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <div className="col-md-3 ">
+          <blockquote
+            className="tiktok-embed"
+            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+            data-video-id="7209959696734637338"
+          >
+            <section>
+              <a
+                target="_blank"
+                title="@picapro2"
+                href="https://www.tiktok.com/@picapro2?refer=embed"
+              >
+                @picapro2
+              </a>
+              <a
+                target="_blank"
+                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+              >
+                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+              </a>
+            </section>
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <div className="col-md-3 ">
+          <blockquote
+            className="tiktok-embed"
+            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+            data-video-id="7209959696734637338"
+          >
+            <section>
+              <a
+                target="_blank"
+                title="@picapro2"
+                href="https://www.tiktok.com/@picapro2?refer=embed"
+              >
+                @picapro2
+              </a>
+              <a
+                target="_blank"
+                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+              >
+                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+              </a>
+            </section>
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
       </div>
-      <div className="col-md-3">
-        <blockquote
-          className="tiktok-embed"
-          cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-          data-video-id="7209959696734637338"
-
-        >
-          <section>
-            <a
-              target="_blank"
-              title="@picapro2"
-              href="https://www.tiktok.com/@picapro2?refer=embed"
-            >
-              @picapro2
-            </a>{" "}
-            dangerous railway train 🚅{" "}
-            <a
-              title="tiktoshortfilm"
-              target="_blank"
-              href="https://www.tiktok.com/tag/tiktoshortfilm?refer=embed"
-            >
-              #tiktoshortfilm
-            </a>{" "}
-            <a
-              title="natural"
-              target="_blank"
-              href="https://www.tiktok.com/tag/natural?refer=embed"
-            >
-              #natural
-            </a>{" "}
-            <a
-              title="foryou"
-              target="_blank"
-              href="https://www.tiktok.com/tag/foryou?refer=embed"
-            >
-              #foryou
-            </a>{" "}
-            <a
-              title="beautiful"
-              target="_blank"
-              href="https://www.tiktok.com/tag/beautiful?refer=embed"
-            >
-              #beautiful
-            </a>{" "}
-            <a
-              title="amazing"
-              target="_blank"
-              href="https://www.tiktok.com/tag/amazing?refer=embed"
-            >
-              #amazing
-            </a>{" "}
-            <a
-              title="viral"
-              target="_blank"
-              href="https://www.tiktok.com/tag/viral?refer=embed"
-            >
-              #viral
-            </a>{" "}
-            <a
-              title="video"
-              target="_blank"
-              href="https://www.tiktok.com/tag/video?refer=embed"
-            >
-              #video
-            </a>{" "}
-            <a
-              title="trending"
-              target="_blank"
-              href="https://www.tiktok.com/tag/trending?refer=embed"
-            >
-              #trending
-            </a>{" "}
-            <a
-              title="tiktok"
-              target="_blank"
-              href="https://www.tiktok.com/tag/tiktok?refer=embed"
-            >
-              #tiktok
-            </a>{" "}
-            <a
-              title="account"
-              target="_blank"
-              href="https://www.tiktok.com/tag/account?refer=embed"
-            >
-              #account
-            </a>{" "}
-            <a
-              target="_blank"
-              title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-              href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-            >
-              ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-            </a>
-          </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
-      </div>
-      <div className="col-md-3">
-        <blockquote
-          className="tiktok-embed"
-          cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-          data-video-id="7209959696734637338"
-
-        >
-          <section>
-            <a
-              target="_blank"
-              title="@picapro2"
-              href="https://www.tiktok.com/@picapro2?refer=embed"
-            >
-              @picapro2
-            </a>{" "}
-            dangerous railway train 🚅{" "}
-            <a
-              title="tiktoshortfilm"
-              target="_blank"
-              href="https://www.tiktok.com/tag/tiktoshortfilm?refer=embed"
-            >
-              #tiktoshortfilm
-            </a>{" "}
-            <a
-              title="natural"
-              target="_blank"
-              href="https://www.tiktok.com/tag/natural?refer=embed"
-            >
-              #natural
-            </a>{" "}
-            <a
-              title="foryou"
-              target="_blank"
-              href="https://www.tiktok.com/tag/foryou?refer=embed"
-            >
-              #foryou
-            </a>{" "}
-            <a
-              title="beautiful"
-              target="_blank"
-              href="https://www.tiktok.com/tag/beautiful?refer=embed"
-            >
-              #beautiful
-            </a>{" "}
-            <a
-              title="amazing"
-              target="_blank"
-              href="https://www.tiktok.com/tag/amazing?refer=embed"
-            >
-              #amazing
-            </a>{" "}
-            <a
-              title="viral"
-              target="_blank"
-              href="https://www.tiktok.com/tag/viral?refer=embed"
-            >
-              #viral
-            </a>{" "}
-            <a
-              title="video"
-              target="_blank"
-              href="https://www.tiktok.com/tag/video?refer=embed"
-            >
-              #video
-            </a>{" "}
-            <a
-              title="trending"
-              target="_blank"
-              href="https://www.tiktok.com/tag/trending?refer=embed"
-            >
-              #trending
-            </a>{" "}
-            <a
-              title="tiktok"
-              target="_blank"
-              href="https://www.tiktok.com/tag/tiktok?refer=embed"
-            >
-              #tiktok
-            </a>{" "}
-            <a
-              title="account"
-              target="_blank"
-              href="https://www.tiktok.com/tag/account?refer=embed"
-            >
-              #account
-            </a>{" "}
-            <a
-              target="_blank"
-              title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-              href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-            >
-              ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-            </a>
-          </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
-      </div>
-      <div className="col-md-3">
-        <blockquote
-          className="tiktok-embed"
-          cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-          data-video-id="7209959696734637338"
-
-        >
-          <section>
-            <a
-              target="_blank"
-              title="@picapro2"
-              href="https://www.tiktok.com/@picapro2?refer=embed"
-            >
-              @picapro2
-            </a>{" "}
-            dangerous railway train 🚅{" "}
-            <a
-              title="tiktoshortfilm"
-              target="_blank"
-              href="https://www.tiktok.com/tag/tiktoshortfilm?refer=embed"
-            >
-              #tiktoshortfilm
-            </a>{" "}
-            <a
-              title="natural"
-              target="_blank"
-              href="https://www.tiktok.com/tag/natural?refer=embed"
-            >
-              #natural
-            </a>{" "}
-            <a
-              title="foryou"
-              target="_blank"
-              href="https://www.tiktok.com/tag/foryou?refer=embed"
-            >
-              #foryou
-            </a>{" "}
-            <a
-              title="beautiful"
-              target="_blank"
-              href="https://www.tiktok.com/tag/beautiful?refer=embed"
-            >
-              #beautiful
-            </a>{" "}
-            <a
-              title="amazing"
-              target="_blank"
-              href="https://www.tiktok.com/tag/amazing?refer=embed"
-            >
-              #amazing
-            </a>{" "}
-            <a
-              title="viral"
-              target="_blank"
-              href="https://www.tiktok.com/tag/viral?refer=embed"
-            >
-              #viral
-            </a>{" "}
-            <a
-              title="video"
-              target="_blank"
-              href="https://www.tiktok.com/tag/video?refer=embed"
-            >
-              #video
-            </a>{" "}
-            <a
-              title="trending"
-              target="_blank"
-              href="https://www.tiktok.com/tag/trending?refer=embed"
-            >
-              #trending
-            </a>{" "}
-            <a
-              title="tiktok"
-              target="_blank"
-              href="https://www.tiktok.com/tag/tiktok?refer=embed"
-            >
-              #tiktok
-            </a>{" "}
-            <a
-              title="account"
-              target="_blank"
-              href="https://www.tiktok.com/tag/account?refer=embed"
-            >
-              #account
-            </a>{" "}
-            <a
-              target="_blank"
-              title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-              href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-            >
-              ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-            </a>
-          </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
-      </div>
-    </div>
     </div>
   );
-}
+};
 
 export default TikTokCard;
-
 
 // import React, { useState, useEffect } from "react";
 // import axios from "axios";
