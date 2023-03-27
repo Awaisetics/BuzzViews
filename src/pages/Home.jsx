@@ -13,7 +13,7 @@ function Home() {
 
       <YTshort maxResults="8" />
       <Tiktok />
-      <Instagram />
+      <Instagram maxResults="8" />
       <Youtube maxResults="20" />
       <Twitter />
       <FacebookReels maxResults="8" />

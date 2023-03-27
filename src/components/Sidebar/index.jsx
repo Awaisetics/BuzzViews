@@ -1,13 +1,25 @@
 import { useState } from "react";
 import "./sidebar.css";
 import Home from "../../pages/Home";
-import { Link, Outlet } from "react-router-dom";
 function Sidebar() {
   const [open, setopen] = useState("");
-
+  
   const handleopen = () => {
     open == "close" ? setopen("") : setopen("close");
   };
+
+  const detectMobile = () => {
+    if (window.innerWidth <= 768) { 
+      document.querySelector('.sidebar').classList.add('close');
+      document.querySelector('.bx-chevron-right').classList.add('d-none');
+    } else {
+      document.querySelector('.sidebar').classList.remove('close');
+      document.querySelector('.bx-chevron-right').classList.remove('d-none');
+    }
+  }
+
+  window.addEventListener('load', detectMobile);
+  window.addEventListener('resize', detectMobile);
 
   return (
     <>
