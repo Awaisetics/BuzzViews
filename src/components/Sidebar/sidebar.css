@@ -220,17 +220,24 @@ body.dark .sidebar li a:hover .text {
   width: calc(100% - 78px);
 }
 
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #home{
+  #home {
     width: 100%;
   }
-  
 }
 
+.carousel.carousel-slider .control-arrow {
+  background-color: #695cfe !important;
+  height: 40px;
+  width: 40px;
+  border-radius: 45%;
+  top: 40% !important;
+  padding: 0 !important;
+  box-shadow: 0 0.5rem 1rem rgba(248, 248, 248, 0.15) !important;
+  opacity: 80 !important;
+}
 
-
-
-
+.carousel .control-dots {
+  margin: 0 !important;
+}

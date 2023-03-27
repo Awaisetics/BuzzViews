@@ -3,21 +3,19 @@ import Instagram from "./Instagram";
 import Youtube from "../components/Card/Youtube/Youtube";
 import Twitter from "./Twitter";
 import YTshort from "./YTshorts/index";
-import Tiktok from './Tiktok'
+import Tiktok from "./Tiktok";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import FacebookReels from '../components/Card/FacebookReels/FacebookReels'
+import { Carousel } from "react-responsive-carousel";
+import FacebookReels from "../components/Card/FacebookReels/FacebookReels";
 function Home() {
   return (
     <>
-
-      <YTshort maxResults="8" />
+      <YTshort maxResults="20" />
       <Tiktok />
-      <Instagram />
+      <Instagram maxResults="20" />
       <Youtube maxResults="20" />
       <Twitter />
-      <FacebookReels maxResults="8" />
-
+      <FacebookReels maxResults="20" />
     </>
   );
 }

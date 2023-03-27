@@ -12,16 +12,6 @@ function App() {
   return (
     <>
       <Sidebar />
-      {/* <Home /> */}
-      {/* <Routes>
-        <Route path="/" element={<Sidebar />}>
-          <Route path="home" element={<Home />} />
-          <Route path="youtube" element={<Youtube />} />
-          <Route path="instagram" element={<Instagram />} />
-          <Route path="twitter" element={<Twitter />} />
-          <Route path="tiktok" element={<Tiktok />} />
-        </Route>
-      </Routes> */}
     </>
   );
 }

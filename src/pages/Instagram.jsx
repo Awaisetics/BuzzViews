@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../components/Card/FacebookReels/FacebookReels.css";
 import axios from "axios";
 import { CircularProgress } from "@mui/material";
-import Video from '../assets/instaReel.mp4'
+import Video from "../assets/instaReel.mp4";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
 const InstaReel = ({ maxResults }) => {
   const [videoData, setVideoData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -57,16 +60,18 @@ const InstaReel = ({ maxResults }) => {
   const videoControls = (e) => {
     if (e.target?.paused) {
       e.target.play();
-    }
-    else {
+    } else {
       e.target.pause();
     }
-  }
+  };
 
   const makeVideoCard = (video) => {
     const channelUrl = `https://www.youtube.com/channel/${video.channelId}`;
     return (
-      <div className="card position-relative shadow my-4 p-0 w-100" key={video.id}>
+      <div
+        className="card position-relative shadow my-4 p-0 w-100"
+        key={video.id}
+      >
         <video onClick={videoControls} className="w-100 h-100" src={Video} />
         <div className="card-body position-absolute bottom-0">
           <h6
@@ -75,9 +80,7 @@ const InstaReel = ({ maxResults }) => {
           >
             {video.title.slice(0, 20)}
           </h6>
-          <p
-            className="card-text text-light lead" style={{ fontSize: '14px' }}
-          >
+          <p className="card-text text-light lead" style={{ fontSize: "14px" }}>
             {video.description.slice(0, 50)}
           </p>
         </div>
@@ -91,7 +94,10 @@ const InstaReel = ({ maxResults }) => {
             />
           </a>
           <a href={channelUrl} target="_blank" rel="noopener noreferrer">
-            <span style={{ fontSize: "14px" }} className="channel-title text-light">
+            <span
+              style={{ fontSize: "14px" }}
+              className="channel-title text-light"
+            >
               {video.channelTitle.slice(0, 25)}
             </span>
           </a>
@@ -101,11 +107,7 @@ const InstaReel = ({ maxResults }) => {
   };
 
   return (
-    <div
-      id="instaReels"
-      className="container mt-5"
-      style={{ height: "99.5%", overflow: "hidden", minHeight: "100vh" }}
-    >
+    <div id="instaReels" className="container mt-5">
       <div className="d-flex align-items-center">
         <i class="bx bxl-instagram bx-lg text-danger"></i>
         <strong className="pb-1 ms-3" style={{ fontSize: "2rem" }}>
@@ -117,15 +119,68 @@ const InstaReel = ({ maxResults }) => {
           <CircularProgress />
         </div>
       ) : (
-        <div className="row">
-          {videoData.map((video) => {
-            return (
-              <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
-                {makeVideoCard(video)}
-              </div>
-            );
-          })}
-        </div>
+        <Carousel showThumbs={false}>
+          <div className="row">
+            {videoData.slice(0, 4).map((video) => {
+              return (
+                <div
+                  className="col-12 col-sm-6 col-md-4 col-lg-3"
+                  key={video.id}
+                >
+                  {makeVideoCard(video)}
+                </div>
+              );
+            })}
+          </div>
+          <div className="row">
+            {videoData.slice(4, 8).map((video, index) => {
+              return (
+                <div
+                  className="col-12 col-sm-6 col-md-4 col-lg-3"
+                  key={video.id}
+                >
+                  {makeVideoCard(video)}
+                </div>
+              );
+            })}
+          </div>
+          <div className="row">
+            {videoData.slice(8, 12).map((video, index) => {
+              return (
+                <div
+                  className="col-12 col-sm-6 col-md-4 col-lg-3"
+                  key={video.id}
+                >
+                  {makeVideoCard(video)}
+                </div>
+              );
+            })}
+          </div>
+          <div className="row">
+            {videoData.slice(12, 16).map((video, index) => {
+              return (
+                <div
+                  className="col-12 col-sm-6 col-md-4 col-lg-3"
+                  key={video.id}
+                >
+                  {makeVideoCard(video)}
+                </div>
+              );
+            })}
+          </div>
+          <div className="row">
+            {videoData.slice(16, 20).map((video, index) => {
+              return (
+                <div
+                  className="col-12 col-sm-6 col-md-4 col-lg-3"
+                  key={video.id}
+                >
+                  {makeVideoCard(video)}
+                </div>
+              );
+            })}
+          </div>
+        </Carousel>
       )}
     </div>
   );

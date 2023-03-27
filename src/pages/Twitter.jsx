@@ -1,7 +1,8 @@
 import { Container, Box } from "@mui/system";
 import React from "react";
 import TwitterCard from "../components/Card/Twitter/Twitter";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 function Twitter() {
   return (
     <>
@@ -16,19 +17,8 @@ function Twitter() {
             Twitter
           </strong>
         </div>
-        <div className="row mt-3">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-            <TwitterCard />
-          </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-            <TwitterCard />
-          </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-            <TwitterCard />
-          </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-            <TwitterCard />
-          </div>
+
+        <div className="row">
           <div className="col-12 col-sm-6 col-md-4 col-lg-3">
             <TwitterCard />
           </div>

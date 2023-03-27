@@ -1,12 +1,14 @@
 import React from "react";
 import TweetCard from "react-tweet-card";
 import { Container, Box } from "@mui/material";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import "./twitter.css";
 function Twitter() {
   return (
     <>
       <div className="twitter-card w-100 my-3">
-        <div className="twitter-card-header">
+        <div className=" text-start twitter-card-header">
           <img
             className="twitter-card-avatar"
             src="https://as1.ftcdn.net/v2/jpg/01/68/80/20/1000_F_168802075_Il6LeUG0NCK4JOELmkC7Ki81g0CiLpxU.jpg"
