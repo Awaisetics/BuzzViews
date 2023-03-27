@@ -1,5 +1,4 @@
 import React from "react";
-import TikTokVideo from "./video";
 
 const TikTokCard = () => {
   return (
@@ -147,7 +146,7 @@ export default TikTokCard;
 //     <div className="container">
 //       <div className="row">
 //         {tiktokData.map((data) => (
-//           <div key="7209959696734637338"className="col-md-3">
+//           <div key="7209959696734637338"className="col-12 col-sm-6 col-md-4 col-lg-3">
 //             {console.log(data,)}
 //             <blockquote
 //               className="tiktok-embed w-100"

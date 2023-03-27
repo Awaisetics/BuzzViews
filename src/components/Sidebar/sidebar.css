@@ -219,3 +219,18 @@ body.dark .sidebar li a:hover .text {
   height: 100vh;
   width: calc(100% - 78px);
 }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #home{
+    width: 100%;
+  }
+  
+}
+
+
+
+
+

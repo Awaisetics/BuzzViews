@@ -23,3 +23,7 @@
 .card-text:hover {
     text-decoration: none;
 }
+
+video:hover{
+    cursor: pointer;
+}

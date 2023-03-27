@@ -53,22 +53,32 @@ const FacebookReels = ({ maxResults }) => {
     };
     fetchData();
   }, []);
+
+  const videoControls = (e) => {
+    if (e.target?.paused) {
+      e.target.play();
+    }
+    else {
+      e.target.pause();
+    }
+  }
+
   const makeVideoCard = (video) => {
     // const videoUrl = `https://www.youtube.com/embed/${video.id}`;
     const videoUrl = 'https://www.facebook.com/reel/872849267301095/?s=ifu';
     const channelUrl = `https://www.youtube.com/channel/${video.channelId}`;
     return (
       <div className="card position-relative shadow my-4 p-0 w-100" key={video.id}>
-        <video className="w-100 h-100" src={Video}  />
+        <video onClick={videoControls} className="w-100 h-100" src={Video} />
         <div className="card-body position-absolute bottom-0">
           <h6
             className="card-title text-light"
-            style={{ lineBreak: "anywhere" }}
+            style={{ lineBreak: "anywhere", fontSize: "15px" }}
           >
             {video.title.slice(0, 20)}
           </h6>
           <p
-            className="card-text text-light lead" style={{fontSize: '14px'}}
+            className="card-text text-light lead" style={{ fontSize: '14px' }}
           >
             {video.description.slice(0, 50)}
           </p>
@@ -77,13 +87,13 @@ const FacebookReels = ({ maxResults }) => {
           <a href={channelUrl} target="_blank" rel="noopener noreferrer">
             <img
               className="channel-thumbnail text-dark rounded-circle me-2"
-              style={{ width: "40px", height: "40px", borderadius: "50%" }}
+              style={{ width: "30px", height: "30px", borderadius: "50%" }}
               src={video.channelThumbnail}
               alt={video.channelTitle}
             />
           </a>
           <a href={channelUrl} target="_blank" rel="noopener noreferrer">
-            <span className="channel-title text-light">
+            <span style={{ fontSize: "14px" }} className="channel-title text-light">
               {video.channelTitle.slice(0, 25)}
             </span>
           </a>
@@ -98,7 +108,7 @@ const FacebookReels = ({ maxResults }) => {
       className="container mt-5"
       style={{ height: "99.5%", overflow: "hidden", minHeight: "100vh" }}
     >
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center mb-3">
         <i class="bx bxl-facebook bx-lg text-primary"></i>
         <strong className="pb-1 ms-3" style={{ fontSize: "2rem" }}>
           Facebook Reels
@@ -112,7 +122,7 @@ const FacebookReels = ({ maxResults }) => {
         <div className="row">
           {videoData.map((video) => {
             return (
-              <div className="col-12 col-sm-6 col-md-3" key={video.id}>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
                 {makeVideoCard(video)}
               </div>
             );

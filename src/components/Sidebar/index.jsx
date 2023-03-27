@@ -35,12 +35,12 @@ function Sidebar() {
         <div className="menu-bar">
           <div className="menu">
             <ul className="menu-links p-0">
-              <li className="nav-link">
+              {/* <li className="nav-link">
                 <a href="#home">
                   <i class="bx bxs-home icon"></i>
                   <span className="text nav-text">Home</span>
                 </a>
-              </li>
+              </li> */}
               <li className="nav-link">
                 <a href="#YTshorts">
                   <i class="bx bxl-youtube icon"></i>
@@ -55,7 +55,7 @@ function Sidebar() {
                 </a>
               </li>
               <li className="nav-link">
-                <a href="#instagram">
+                <a href="#instaReels">
                   <i class="bx bxl-instagram-alt icon"></i>
                   <span className="text nav-text">Instagram Reels</span>
                 </a>

@@ -72,31 +72,26 @@ const Youtube = ({ maxResults }) => {
             allowFullScreen
           />
         </div>
-        <div className="card-body">
+        <div className="card-body text-start">
           <h5
-            className="card-title text-dark"
-            style={{ lineBreak: "anywhere" ,fontSize : "16px" }}
+            className="card-title text-left text-dark"
+            style={{ lineBreak: "anywhere" ,fontSize : "15px" }}
           >
-            {video.title.slice(0, 20)}
+            {video.title.slice(0, 25)}
           </h5>
           <p
             className="card-text text-secondary"
             style={{
-              
-              overflow: "hidden",
-              display: "-webkit-box",
-              webkitBoxOrient: "vertical",
-              webkitLineClamp: "3",
               fontSize: "12px"
             }}
           >
-            {video.description.slice(0,50)}
+            {video.description.slice(0,55)}
           </p>
-          <div className="channel-info mt-3">
+          <div className="channel-info mt-0">
             <a href={channelUrl} target="_blank" rel="noopener noreferrer">
               <img
                 className="channel-thumbnail text-dark rounded-circle me-2"
-                style={{ width: "40px", height: "40px", borderadius: "50%" }}
+                style={{ width: "30px", height: "30px", borderadius: "50%" }}
                 src={video.channelThumbnail}
                 alt={video.channelTitle}
               />
@@ -128,12 +123,11 @@ const Youtube = ({ maxResults }) => {
           <CircularProgress />
         </div>
       ) : (
-        // <div className="row">
           <Carousel showThumbs={false}>
             <div className="row">
               {videoData.slice(0,4).map((video) => {
                 return (
-                  <div className="col-12 col-sm-6 col-md-3" key={video.id}>
+                  <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
                     {makeVideoCard(video)}
                   </div>
                 )
@@ -142,7 +136,34 @@ const Youtube = ({ maxResults }) => {
               <div className="row">
                 {videoData.slice(4,8).map((video, index) => {
                   return (
-                    <div className="col-12 col-sm-6 col-md-3" key={video.id}>
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
+                      {makeVideoCard(video)}
+                    </div>
+                  )
+                })}
+            </div>
+              <div className="row">
+                {videoData.slice(8,12).map((video, index) => {
+                  return (
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
+                      {makeVideoCard(video)}
+                    </div>
+                  )
+                })}
+            </div>
+              <div className="row">
+                {videoData.slice(12,16).map((video, index) => {
+                  return (
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
+                      {makeVideoCard(video)}
+                    </div>
+                  )
+                })}
+            </div>
+              <div className="row">
+                {videoData.slice(16,20).map((video, index) => {
+                  return (
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
                       {makeVideoCard(video)}
                     </div>
                   )
@@ -150,7 +171,6 @@ const Youtube = ({ maxResults }) => {
             </div>
 
           </Carousel>
-        // </div>
       )}
     </div>
   );
