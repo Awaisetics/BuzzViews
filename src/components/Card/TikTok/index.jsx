@@ -13,7 +13,7 @@ const TikTokCard = () => {
       </div>
       <Carousel showThumbs={false}>
         <div className="row">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-3 ">
             <blockquote
               className="tiktok-embed"
               cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
