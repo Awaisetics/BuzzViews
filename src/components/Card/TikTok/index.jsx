@@ -1,4 +1,6 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const TikTokCard = () => {
   return (
@@ -9,108 +11,416 @@ const TikTokCard = () => {
           Tiktok
         </strong>
       </div>
-      <div className="row">
-        <div className="col-md-3 ">
-          <blockquote
-            className="tiktok-embed"
-            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-            data-video-id="7209959696734637338"
-          >
-            <section>
-              <a
-                target="_blank"
-                title="@picapro2"
-                href="https://www.tiktok.com/@picapro2?refer=embed"
-              >
-                @picapro2
-              </a>
-              <a
-                target="_blank"
-                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-              >
-                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-              </a>
-            </section>
-          </blockquote>
-          <script async src="https://www.tiktok.com/embed.js"></script>
+      <Carousel showThumbs={false}>
+        <div className="row">
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
         </div>
-        <div className="col-md-3 ">
-          <blockquote
-            className="tiktok-embed"
-            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-            data-video-id="7209959696734637338"
-          >
-            <section>
-              <a
-                target="_blank"
-                title="@picapro2"
-                href="https://www.tiktok.com/@picapro2?refer=embed"
-              >
-                @picapro2
-              </a>
-              <a
-                target="_blank"
-                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-              >
-                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-              </a>
-            </section>
-          </blockquote>
-          <script async src="https://www.tiktok.com/embed.js"></script>
+        <div className="row">
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
         </div>
-        <div className="col-md-3 ">
-          <blockquote
-            className="tiktok-embed"
-            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-            data-video-id="7209959696734637338"
-          >
-            <section>
-              <a
-                target="_blank"
-                title="@picapro2"
-                href="https://www.tiktok.com/@picapro2?refer=embed"
-              >
-                @picapro2
-              </a>
-              <a
-                target="_blank"
-                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-              >
-                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-              </a>
-            </section>
-          </blockquote>
-          <script async src="https://www.tiktok.com/embed.js"></script>
+        <div className="row">
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
         </div>
-        <div className="col-md-3 ">
-          <blockquote
-            className="tiktok-embed"
-            cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
-            data-video-id="7209959696734637338"
-          >
-            <section>
-              <a
-                target="_blank"
-                title="@picapro2"
-                href="https://www.tiktok.com/@picapro2?refer=embed"
-              >
-                @picapro2
-              </a>
-              <a
-                target="_blank"
-                title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
-                href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
-              >
-                ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
-              </a>
-            </section>
-          </blockquote>
-          <script async src="https://www.tiktok.com/embed.js"></script>
+        <div className="row">
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <blockquote
+              className="tiktok-embed"
+              cite="https://www.tiktok.com/@picapro2/video/7209959696734637338"
+              data-video-id="7209959696734637338"
+            >
+              <section>
+                <a
+                  target="_blank"
+                  title="@picapro2"
+                  href="https://www.tiktok.com/@picapro2?refer=embed"
+                >
+                  @picapro2
+                </a>
+                <a
+                  target="_blank"
+                  title="♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸"
+                  href="https://www.tiktok.com/music/original-sound-7200837413822941978?refer=embed"
+                >
+                  ♬ original sound - ℍ𝔸𝔽𝕊𝔸🦋🧸
+                </a>
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
         </div>
-      </div>
+      </Carousel>
     </div>
   );
 };
