@@ -23,6 +23,56 @@ function Sidebar() {
 
   return (
     <>
+      <nav class="navbar z-1 navbar-expand-md d-sm-none bg-white">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" style={{ color: "#695cfe" , fontWeight: 700}} href="#home">BuzzViews</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-link">
+                <a href="#YTshorts">
+                  <i class="bx bxl-youtube icon"></i>
+                  <span className="text nav-text">Youtube Shorts</span>
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a href="#tiktok">
+                  <i class="bx bxl-tiktok icon"></i>
+                  <span className="text nav-text">Tiktok</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#instaReels">
+                  <i class="bx bxl-instagram-alt icon"></i>
+                  <span className="text nav-text">Instagram Reels</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#youtube">
+                  <i class="bx bxl-youtube icon"></i>
+                  <span className="text nav-text">Youtube Videos</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#twitter">
+                  <i class="bx bxl-twitter icon"></i>
+                  <span className="text nav-text">Twitter</span>
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a href="#fbReels">
+                  <i class="bx bxl-facebook icon"></i>
+                  <span className="text nav-text">Facebook Reels</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <nav className={`sidebar ${open}`}>
         <header>
           <a href="#home">
@@ -96,7 +146,7 @@ function Sidebar() {
         </div>
       </nav>
       <main id="home" className="home">
-        <section className="main-content">
+        <section className="main-content mt-sm-0">
           <Home />
         </section>
       </main>
