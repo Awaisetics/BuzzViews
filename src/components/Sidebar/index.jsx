@@ -9,7 +9,7 @@ function Sidebar() {
   };
 
   const detectMobile = () => {
-    if (window.innerWidth <= 768) { 
+    if (window.innerWidth <= 1000) { 
       document.querySelector('.sidebar').classList.add('close');
       document.querySelector('.bx-chevron-right').classList.add('d-none');
     } else {
@@ -23,7 +23,7 @@ function Sidebar() {
 
   return (
     <>
-      <nav class="navbar z-1 navbar-expand-md d-sm-none bg-white">
+      <nav class="navbar z-1 navbar-expand-md d-md-none bg-white">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,6 @@ function Sidebar() {
                   <span className="text nav-text">Youtube Shorts</span>
                 </a>
               </li>
-
               <li className="nav-item">
                 <a href="#tiktok">
                   <i class="bx bxl-tiktok icon"></i>
@@ -146,7 +145,7 @@ function Sidebar() {
         </div>
       </nav>
       <main id="home" className="home">
-        <section className="main-content mt-sm-0">
+        <section className="main-content mt-md-0">
           <Home />
         </section>
       </main>

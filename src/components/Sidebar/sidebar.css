@@ -220,8 +220,29 @@ body.dark .sidebar li a:hover .text {
   width: calc(100% - 78px);
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
+  #home {
+    width: 100%;
+    left: 0;
+    padding-left: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-top: 40px;
+  }
+
+  .carousel .slide iframe {
+    margin: 0 !important;
+  }
+}
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
   #home {
     width: 100%;
     left: 0;
@@ -255,3 +276,7 @@ body.dark .sidebar li a:hover .text {
 .carousel .control-dots {
   margin: 0 !important;
 }
+
+ .carousel .slide iframe {
+   margin: 0 !important;
+ }
