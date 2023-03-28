@@ -233,6 +233,9 @@ body.dark .sidebar li a:hover .text {
   .main-content{
     margin-top: 40px;
   }
+  .carousel .slide iframe{
+    margin: 0;
+  }
 }
 
 .carousel.carousel-slider .control-arrow {
