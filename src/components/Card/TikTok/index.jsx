@@ -440,7 +440,7 @@ const TikTokCard = () => {
           </div>
         </Carousel>
       ) : (
-          <Carousel showThumbs={false}>
+          <Carousel showThumbs={false} swipeable={false}>
             <div className="row">
               <div className="col-12 col-sm-6 col-md-6 col-lg-3 ">
                 <blockquote

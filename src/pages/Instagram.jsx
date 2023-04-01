@@ -186,7 +186,7 @@ const InstaReel = ({ maxResults }) => {
             </div>
           </Carousel>
         ) : (
-          <Carousel showThumbs={false}>
+              <Carousel showThumbs={false} swipeable={false}>
             <div className="row">
               {videoData.slice(0, 1).map((video) => {
                 return (

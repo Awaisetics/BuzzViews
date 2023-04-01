@@ -184,7 +184,7 @@ const YTshorts = ({ maxResults }) => {
             </div>
           </Carousel>
         ) : (
-          <Carousel showThumbs={false}>
+              <Carousel swipeable={false} showThumbs={false}>
             <div className="row">
               {videoData.slice(0, 1).map((video) => {
                 return (
