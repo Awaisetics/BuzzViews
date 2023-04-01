@@ -74,7 +74,7 @@ const YTshorts = ({ maxResults }) => {
         <div className="card-body w-100 position-absolute bottom-0">
           <p
             className="card-title text-light"
-            style={{ lineBreak: "anywhere", fontSize: "15px" }}
+            style={{ lineBreak: "anywhere", fontSize: "15px", textAlign: "left" }}
           >
             {video.title.slice(0, 20)}
           </p>

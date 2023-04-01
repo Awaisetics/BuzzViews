@@ -31,41 +31,41 @@ function Sidebar() {
           <a class="navbar-brand" style={{ color: "#695cfe" , fontWeight: 700}} href="#home">BuzzViews</a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-link">
+              <li className="nav-item border px-2 py-1 mt-2">
                 <a href="#YTshorts">
-                  <i class="bx bxl-youtube icon"></i>
-                  <span className="text nav-text">Youtube Shorts</span>
+                  <i class="bx bxl-youtube icon me-2 text-danger"></i>
+                  <span className="text nav-text text-dark">Youtube Shorts</span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item border px-2 py-1">
                 <a href="#tiktok">
-                  <i class="bx bxl-tiktok icon"></i>
-                  <span className="text nav-text">Tiktok</span>
+                  <i class="bx bxl-tiktok icon me-2 text-dark"></i>
+                  <span className="text nav-text text-dark">Tiktok</span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item border px-2 py-1">
                 <a href="#instaReels">
-                  <i class="bx bxl-instagram-alt icon"></i>
-                  <span className="text nav-text">Instagram Reels</span>
+                  <i class="bx bxl-instagram-alt icon me-2 text-danger"></i>
+                  <span className="text nav-text text-dark">Instagram Reels</span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item border px-2 py-1">
                 <a href="#youtube">
-                  <i class="bx bxl-youtube icon"></i>
-                  <span className="text nav-text">Youtube Videos</span>
+                  <i class="bx bxl-youtube icon me-2 text-danger"></i>
+                  <span className="text nav-text text-dark">Youtube Videos</span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item border px-2 py-1">
                 <a href="#twitter">
-                  <i class="bx bxl-twitter icon"></i>
-                  <span className="text nav-text">Twitter</span>
+                  <i class="bx bxl-twitter icon me-2 text-primary"></i>
+                  <span className="text nav-text text-dark">Twitter</span>
                 </a>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item border px-2 py-1">
                 <a href="#fbReels">
-                  <i class="bx bxl-facebook icon"></i>
-                  <span className="text nav-text">Facebook Reels</span>
+                  <i class="bx bxl-facebook icon me-2 text-primary"></i>
+                  <span className="text nav-text text-dark">Facebook Reels</span>
                 </a>
               </li>
             </ul>
