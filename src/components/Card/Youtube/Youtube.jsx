@@ -8,6 +8,20 @@ import { CircularProgress } from "@mui/material";
 const Youtube = ({ maxResults }) => {
   const [videoData, setVideoData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+
+  const detectMobile = () => {
+    if (window.innerWidth <= 576) {
+      setIsMobileView(true)
+    } else {
+      setIsMobileView(false);
+    }
+    console.log('isMobileView', isMobileView);
+  }
+
+  window.addEventListener('load', detectMobile);
+  window.addEventListener('resize', detectMobile);
 
   const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
   const videoEndpoint =
@@ -123,54 +137,205 @@ const Youtube = ({ maxResults }) => {
           <CircularProgress />
         </div>
       ) : (
+        !isMobileView ? (
           <Carousel showThumbs={false}>
             <div className="row">
-              {videoData.slice(0,4).map((video) => {
+              {videoData.slice(0, 4).map((video) => {
                 return (
-                  <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
                     {makeVideoCard(video)}
                   </div>
-                )
+                );
               })}
             </div>
-              <div className="row">
-                {videoData.slice(4,8).map((video, index) => {
-                  return (
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
-                      {makeVideoCard(video)}
-                    </div>
-                  )
-                })}
+            <div className="row">
+              {videoData.slice(4, 8).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
             </div>
-              <div className="row">
-                {videoData.slice(8,12).map((video, index) => {
-                  return (
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
-                      {makeVideoCard(video)}
-                    </div>
-                  )
-                })}
+            <div className="row">
+              {videoData.slice(8, 12).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
             </div>
-              <div className="row">
-                {videoData.slice(12,16).map((video, index) => {
-                  return (
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
-                      {makeVideoCard(video)}
-                    </div>
-                  )
-                })}
+            <div className="row">
+              {videoData.slice(12, 16).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
             </div>
-              <div className="row">
-                {videoData.slice(16,20).map((video, index) => {
-                  return (
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={video.id}>
-                      {makeVideoCard(video)}
-                    </div>
-                  )
-                })}
-            </div>
-
           </Carousel>
+        ) : (
+          <Carousel showThumbs={false}>
+            <div className="row">
+              {videoData.slice(0, 1).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(1, 2).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(2, 3).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(3, 4).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(4, 5).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(5, 6).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(6, 7).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(7, 8).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(8, 9).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(9, 10).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(10, 11).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="row">
+              {videoData.slice(11, 12).map((video) => {
+                return (
+                  <div
+                    className="col-12 col-sm-6 col-md-4 col-lg-3"
+                    key={video.id}
+                  >
+                    {makeVideoCard(video)}
+                  </div>
+                );
+              })}
+            </div>
+          </Carousel>
+        )
       )}
     </div>
   );
