@@ -252,11 +252,12 @@ body.dark .sidebar li a:hover .text {
   .sidebar {
     display: none;
   }
-
+  .carousel .slider-wrapper {
+    overflow-x: auto !important;
+  }
   .main-content {
     margin-top: 40px;
   }
-
   .carousel .slide iframe {
     margin: 0 !important;
   }
