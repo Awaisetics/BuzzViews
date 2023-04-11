@@ -276,8 +276,12 @@ body.dark .sidebar li a:hover .text {
 
 .carousel .control-dots {
   margin: 0 !important;
+  display: none;
 }
 
+.carousel-status {
+  display: none;
+}
 .carousel .slide iframe {
   margin: 0 !important;
 }
